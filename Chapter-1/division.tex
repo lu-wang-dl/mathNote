@@ -1,0 +1,187 @@
+\subsection{Basic facts of division 除法的基础}
+\begin{paracol}{2}
+The division of two natural numbers is the process of calculating the number of times one number is contained within another one. Division is the inverse of multiplication. For example, since $4\times 5 = 20$, $20\div 5 = 4$. In division, the dividend is divided by the divisor to get a quotient. In the above example, 20 is the dividend, five is the divisor, and four is the quotient. In some cases, the divisor may not be contained fully by the dividend. 
+\switchcolumn[1]
+除法可以看成“重复的减法”，其的本质是计算一个数需要减另一个数多少次才能变成零。除法是减法的逆运算。例如：$4\times 5 = 20$，所以 $20\div 5 = 4$。除法中，是被除数除以除数，其结果为商数。在上面的例子中$20$是被除数，$5$是除数，$4$是商数。
+\switchcolumn[0]*
+Sometimes this remainder is added to the quotient as a fractional part, but in the context of integer division, where numbers have no fractional part, the remainder is kept separately or discarded.
+\switchcolumn[1]
+有时会出现被除数不能够被除数整除的情况，即有余数。余数可以继续计算成为商数的一部分，但现在（整数除法）我们会把它单独写出来或者忽略掉。
+\end{paracol}
+
+\begin{paracol}{2}
+In order to do the division for large numbers, we have to know:
+\begin{enumerate}
+\item multiplication charts (at least fairly well)
+\item basic division concept, based on multiplication tables (for example $28 \div 7$ or $56 \div 8$)
+\item basic division with remainders (for example $54 \div 7$ or $23 \div 5$)
+\end{enumerate}
+\switchcolumn[1]
+如果要学习较大数的除法，我们需要做到如下：
+\begin{enumerate}
+\item 熟练掌握九九乘法表
+\item 利用乘法表计算除法 (例如 $28 \div 7$ or $56 \div 8$)
+\item 知道如何计算基本的带余数的除法 (例如 $54 \div 7$ or $23 \div 5$)
+\end{enumerate}
+\end{paracol}
+
+\subsection{Long division  除法竖式}
+
+\begin{paracol}{2}
+Long division is an algorithm that repeats the basic steps of
+1) Divide; 2) Multiply; 3) Subtract; 4) Drop down the next digit. Here are the basic procedure\cite{Longdiv}:
+\switchcolumn[1]
+除法竖式的算法是在重复 1) 除; 2) 乘; 3) 减; 4) 拉下一位 这样的过程。其基本算法如下\cite{Longdiv}:：
+\end{paracol}
+
+\begin{paracol}{2}
+\begin{enumerate}
+\item Divide
+\begin{enumerate}
+\item {\bf Set up the equation.} Write the dividend on the right, under the division symbol, and the divisor to the left on the outside. The quotient will eventually go on top, right above the dividend. Leave yourself plenty of space below the equation to carry out multiple subtraction operations.
+\item {\bf Divide the first digit.} Working from left to right, determine how many times the divisor can go into the first digit of the dividend without exceeding it.
+\item {\bf Divide the first two digits.} If the divisor is a larger number than the first digit, determine how many times the divisor goes into the first two digits of the dividend without exceeding it. If your divisor has more than two digits, you'll have to expand out even further.
+\item {\bf Enter the first digit of the quotient.} Put the number of times the divisor goes into the first digit (or digits) of the dividend above the appropriate digit(s).
+\end{enumerate}
+\item Multiply
+\begin{enumerate}
+\item {\bf Multiply the divisor.} The divisor should be multiplied by the number you have just written above the dividend.
+\item {\bf Record the product.} Put the result of your multiplication in step 1 beneath the dividend.
+\item {\bf Draw a line.} A line should be placed beneath the product of your multiplication
+\end{enumerate}
+\item subtract
+\begin{enumerate}
+\item {\bf Subtract the product.} Subtract the number you just wrote below the dividend from the digits of the dividend directly above it. Write the result beneath the line you just drew.
+\item {\bf Bring down the next digit.} Write the next digit of the dividend after result of your subtraction operation.
+\end{enumerate}
+\item {\bf Repeat the whole process.} Divide the new number by your divisor, and write the result above the dividend as the next digit of the quotient.
+\end{enumerate}
+\switchcolumn[1]
+\begin{enumerate}
+\item 除
+\begin{enumerate}
+\item {\bf 建立竖式。} 被除数写在除号下面，除数写在除号左边。商数将写在除号上边。所以在建立竖式时在上方留些空间。\\ \\ \\ \\ 
+\item {\bf 除第一位。} 从被除数的最左一位开始。试验出最大的数使得这个数乘以除数小于第一位。\\ \\ 
+\item {\bf 除前两位} 如果除数比第一位大, 就试验出最大的数使得这个数乘以除数小于前两位。注意，如果除数也是一个多位数，那么我们就需要更多位使得比除数大。\\ \\ 
+\item {\bf 记下商数的第一位。} 把前面试验得到的数字写到商数，数字要与计算的被除数最后一位数字对齐。\\ 
+\end{enumerate}
+\item 乘
+\begin{enumerate}
+\item {\bf 乘除数} 用除数乘以上步记下的数字。\\ \\ 
+\item {\bf 记录结果} 把结果写在被除数下面，结果要个上步使用的被除数数字对齐。
+\item {\bf 划线。} 画一条线在刚才计算的结果下面。\\ 
+\end{enumerate}
+\item 减
+\begin{enumerate}
+\item {\bf 减。} 用被除数对应的位置减去刚才计算的结果。 把结果写到线的下方。\\ \\ 
+\item {\bf 写下被除数后面的数字} 把被除数后面的数字写到刚才的计算结果后面。\\ 
+\end{enumerate}
+\item {\bf 重复前面的过程} 重新用除数除新上面写下的数字。把新试验出的数字写到商数位置的上一个数字右面。
+\end{enumerate}
+\end{paracol}
+
+\paragraph{Dividing a number by a 1-digit number 一位数除法}
+\ \ 
+
+\begin{example}
+$148\div 21$
+\end{example}
+%\multicolumn{3}{c}{\fcolorbox{black}{black}{\color{white}\ \ \ Step 1\ \ \ }}\\
+\begin{solution}
+$$
+\arraycolsep=0pt
+\begin{array}{rccc}
+&&&\\
+\cline{2-4}
+3&{\Big)}\ 2\quad&\quad8\quad&\quad5\\
+&&&
+\end{array}
+\Rightarrow
+\begin{array}{rccc}
+&&&\\
+\cline{2-4}
+3&{\Big)}\ {\color{red}\ 2}\quad&\quad8\quad&\quad5\\
+&&&
+\end{array}
+\Rightarrow
+\begin{array}{rccc}
+&&\quad {\color{red}9}\quad&\\
+\cline{2-4}
+3&{\Big)}\ {\color{red}\ 2}\quad&\quad{\color{red}8}\quad&\quad5\\
+&&&
+\end{array}
+$$
+$$
+\arraycolsep=0pt
+\Rightarrow
+\begin{array}{rccc}
+&&\quad {\color{red}9}\quad&\\
+\cline{2-4}
+{\color{red}\ 3}&{\Big)}\ \ 2\quad&\quad8\quad&\quad5\\
+&\quad{\color{red}2}\quad&\quad{\color{red}7}\quad&\\
+\hline
+&&&
+\end{array}
+\Rightarrow
+\begin{array}{rccc}
+&&\quad 9\quad&\\
+\cline{2-4}
+3&{\Big)}\ \ {\color{red}2}\quad&\quad{\color{red}8}\quad&\quad5\\
+&\quad{\color{red}2}\quad&\quad{\color{red}7}\quad&\\
+\hline
+&&\quad{\color{red}1}\quad&
+\end{array}
+\Rightarrow
+\begin{array}{rccc}
+&&\quad 9\quad&\\
+\cline{2-4}
+3&{\Big)}\ \ 2\quad&\quad8\quad&\quad5\\
+&\quad2\quad&\quad7\quad&\quad{\color{red} \downarrow}\\
+\hline
+&&\quad1\quad&\quad{\color{red} 5}
+\end{array}
+$$
+$$
+\arraycolsep=0pt
+\Rightarrow
+\begin{array}{rccc}
+&&\quad 9\quad&\quad{\color{red} 5}\\
+\cline{2-4}
+{\color{red}3}&{\Big)}\ \ 2\quad&\quad8\quad&\quad5\\
+&\quad2\quad&\quad7\quad&\quad\downarrow\\
+\hline
+&&\quad{\color{red}1}\quad&\quad{\color{red} 5}\\
+&&&\\
+&&&
+\end{array}
+\Rightarrow
+\begin{array}{rccc}
+&&\quad 9\quad&\quad5\\
+\cline{2-4}
+3&{\Big)}\ \ 2\quad&\quad8\quad&\quad5\\
+&\quad2\quad&\quad7\quad&\quad\downarrow\\
+\hline
+&&\quad{\color{red}1}\quad&\quad{\color{red} 5}\\
+&&\quad{\color{red} 1}\quad&\quad{\color{red} 5}\\ \hline
+&&&\quad{\color{red} 0}
+\end{array}
+$$
+$285\div 3= 95.$
+\end{solution}
+
+\paragraph{Dividing a number by a multi-digit number 多位数除法}
+\ \  
+
+\begin{example}
+$148\div 21$
+\end{example}
+%\multicolumn{3}{c}{\fcolorbox{black}{black}{\color{white}\ \ \ Step 1\ \ \ }}\\
+\begin{solution}
+\input longdiv.tex
+$$
+\longdiv{148}{21}
+$$
+$148\div 21= 7\ R\  1.$
+\end{solution}
+
+   \newpage

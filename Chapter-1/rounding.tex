@@ -1,0 +1,47 @@
+\subsection{Rounding 四舍五入}
+\begin{paracol}{2}
+Rounding means making a number simpler but keeping its value close to what it was. The result is less accurate, but easier to use. 
+\switchcolumn[1]
+近似是寻找一个和原来的数接近的看起来比较“简单”的数。它不精确，但是相对简单。
+\switchcolumn[0]*
+There are several different methods for rounding. Here we look at the common method, the one used by most people.
+\switchcolumn[1]
+有许多种不同的近似方法，通常我们用的方法是四舍五入。其方法如下：
+\end{paracol}
+
+\begin{newalg}[How to Round Numbers 四舍五入方法]
+\begin{enumerate}
+\item Decide which is the last digit to keep
+\item Leave it the same if the next digit is less than 5 (this is called rounding down)
+\item But increase it by 1 if the next digit is 5 or more (this is called rounding up)
+\end{enumerate}
+
+\begin{enumerate}
+\item 决定要保持的位
+\item  如果其下一位小于5，保持这位的数字（向下近似）
+\item  如果其下一位大于等于5，则这位数字加1（向上近似）
+\end{enumerate}
+\end{newalg}
+
+\begin{example}
+Round 73 to the nearest 10 把73近似到十位
+\end{example}
+\begin{solution}
+\begin{paracol}{2}
+Since $7$ is the tens position, we want to keep it. The next digit is $3$, which is less than $5$. Therefore, no change is needed. The answer is $70$.
+\switchcolumn[1]
+因为十位上是 $7$，这是我们要保持的数。而其个位为$3$，小于$5$。所以十位不用加一就是 $7$。所以，四舍五入到十位是 $70$。
+\end{paracol}
+\end{solution}
+
+\begin{example}
+Round 191 to the nearest 100 把$191$近似到百位
+\end{example}
+\begin{solution}
+\begin{paracol}{2}
+Since $1$ is the hundreds position, we want to keep it. The next digit is $9$, which is greater than $5$. Therefore, increase $1$ to $2$. The answer is $200$.
+\switchcolumn[1]
+因为百位上是 $1$，这是我们要保持的数。而其十位为$9$，大于$5$。所以百位加一就是 $2$。所以，四舍五入到百位是 $200$。
+\end{paracol}
+\end{solution}
+\newpage

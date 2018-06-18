@@ -1,0 +1,159 @@
+%!TEX program = xelatex
+\documentclass[color=green,mathpazo,titlestyle=hang,11pt]{elegantbook}
+
+\author{Lu Wang}
+\email{FYFremont@gmail.com}
+\zhtitle{爱飞扬数学教学参考}
+\zhend{}
+\entitle{IFY}
+\enend{Mathematics Teaching Note}
+\version{1.0}
+\myquote{当将你的事交托耶和华，并信靠他，他就必成全。诗篇37: 5 \\ Commit your way to the Lord; trust in him and he will do this. Psalm 37:5}
+\logo{IFY}
+\cover{cover.pdf}
+
+%green color
+   \definecolor{main1}{RGB}{0,120,2}
+   \definecolor{seco1}{RGB}{230,90,7}
+   \definecolor{thid1}{RGB}{0,160,152}
+%cyan color
+   \definecolor{main2}{RGB}{0,175,152}
+   \definecolor{seco2}{RGB}{239,126,30}
+   \definecolor{thid2}{RGB}{120,8,13}
+%blue color
+   \definecolor{main3}{RGB}{20,50,104}
+   \definecolor{seco3}{RGB}{180,50,131}
+   \definecolor{thid3}{RGB}{7,127,128}
+
+\usepackage{makecell}
+\usepackage{lipsum}
+\usepackage{texnames}
+\usepackage{paracol}
+\usepackage{setspace}
+\usepackage{bm}
+\usepackage{tikz}
+\usepackage{tkz-graph}
+\usetikzlibrary{arrows, decorations.markings}
+\usepackage{lmodern}
+\usepackage[outline]{contour}
+\usetikzlibrary{shapes}
+\usetikzlibrary{calc}
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture,baseline={-3pt}] \node[] (#1) {};}
+\usepackage{siunitx}
+\usepackage{amsmath} 
+\usepackage{cancel}
+\usepackage{xcolor,colortbl}
+\usepackage{arydshln}
+\usepackage{basicarith}
+\usepackage[clock]{ifsym}
+
+\newcommand\clock[2]{%
+  \begin{tikzpicture}[cap=round,rotate=90]
+    % colors
+    \colorlet{minutes color}{blue!50!cyan!70!black}
+    \colorlet{bg hours 0}{yellow}
+    \colorlet{bg hours 1}{red!50}
+    \colorlet{hours color}{red!80!black}
+    % styles
+    \tikzset{
+      minutes/.style={circle,inner sep=0,text width=5mm,align=center,font=\bfseries},
+      minutes 0/.style={fill=minutes color,text=white,minutes},
+      minutes 1/.style={text=minutes color,fill=white,minutes},
+      minutes font/.style={font=\normalsize},
+      hours/.style={font=\fontsize{60}{66}\selectfont\bfseries,text=hours color,align=center},
+      mini hours font/.style={font=\fontsize{40}{46}\selectfont\bfseries},
+    }
+    % radii
+    \def\bigradius{80mm}
+    \def\minuteradius{75mm}
+    \def\hourradius{60mm}
+    \def\minihourminradius{25mm}
+    \def\minihourmaxradius{45mm}
+    \pgfmathsetmacro\minihourradius{(\minihourmaxradius + \minihourminradius)*.5}
+    \def\hourwidth{2mm}
+    \def\minutewidth{1mm}
+
+    % big circle
+    \filldraw [fill=white,draw=minutes color] (0,0) circle (\bigradius);
+
+    % minutes marks
+    \foreach \angle[count=\c from 0,evaluate={\c as \hourmark using notequal(int(mod(\c,5)),0)}]
+    in {0,6,...,354}{ \path (-\angle:\minuteradius) node[minutes \hourmark]{\c}; }
+
+    % hours marks
+    \foreach \angle[count=\c from 1,evaluate={\c as \col using int(mod(\c,2))}] in {30,60,...,360}{
+
+      \path (-\angle:\hourradius) node[hours]{\c};
+
+      \path[fill=bg hours \col]
+      (-\angle:\minihourminradius) -- (-\angle:\minihourmaxradius)
+      arc(-\angle:-\angle-30:\minihourmaxradius) -- (-\angle-30:\minihourminradius)
+      arc(-\angle-30:-\angle:\minihourminradius) -- cycle;
+
+      \path (-\angle-15:\minihourradius pt) node[mini hours font]{\textcolor{white}{\contour{hours color}{\c}}};
+    }
+
+    % hands
+    \pgfmathsetmacro\hourangle{-#1*30-#2*.5}
+    \pgfmathsetmacro\minuteangle{-#2*6}
+    \fill[rotate=\hourangle,fill=hours color] ++(0,\hourwidth) arc(90:270:\hourwidth) -- ++(50mm,0)
+    -- ++(\hourwidth,\hourwidth) -- ++(-\hourwidth,\hourwidth) -- ++(-50mm,0) -- cycle ;
+    \fill[rotate=\minuteangle,fill=minutes color] ++(0,\minutewidth) arc(90:270:\minutewidth) -- ++(70mm,0)
+    -- ++(\minutewidth,\minutewidth) -- ++(-\minutewidth,\minutewidth) -- ++(-70mm,0) -- cycle ;
+
+  \end{tikzpicture}%
+}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\mainmatter
+\chapter{Numbers 数字}
+
+\section{Basic concept  数字相关基础知识}
+\input{Chapter-1/numbers}
+\input{Chapter-1/geometry}
+\input{Chapter-1/count}
+\input{Chapter-1/compare}
+\input{Chapter-1/rounding}
+
+\section{Addtion and subtraction 数的加减法}
+\input{Chapter-1/addsub}
+\input{Chapter-1/threesum}
+\input{Chapter-1/mixeqn1}
+
+\section{Multiplication and division 数的乘除法}
+\input{Chapter-1/multiplication}
+\input{Chapter-1/division}
+\input{Chapter-1/exponents}
+\input{Chapter-1/factoring}
+\input{Chapter-1/evenodd}
+
+\section{Arithmetic of integers 四则混合运算}
+\input{Chapter-1/arithmetic}
+
+\section{Number patterns 数字的规律}
+\input{Chapter-1/pattern}
+
+\chapter{Decimals and fractions 小数和分数}
+\input{Chapter-2/decimalfraction}
+\input{Chapter-2/compare}
+
+\section{Arithmetic with decimals and fractions 小数和分数的四则运算}
+\input{Chapter-2/arithmetic}·
+\input{Chapter-2/arithmetic1}
+\input{Chapter-2/mixcal}
+
+\chapter{Application 应用}
+\input{Chapter-3/measurement}
+\input{Chapter-3/statistics}
+\input{Chapter-3/geometry}
+
+\chapter{Geometry 几何}
+
+
+\bibliographystyle{ieeetr}
+\bibliography{reference}
+\addcontentsline{toc}{chapter}{参考文献}
+
+\end{document}

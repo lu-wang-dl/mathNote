@@ -1,0 +1,263 @@
+\subsection{Comparing and ordering 比较与排序}
+\begin{paracol}{2}
+There are three relationship between two numbers: equal, greater, or less. Sorting is ordering the numbers in a line by comparing the values, or arranging something with certain requirements.
+\switchcolumn[1]
+两个数之间有三种关系：相等，大于和小于。排序就是把互相不等的一些数通过比较按大小顺序排列
+起来，或是按照一定的要求把一些东西排列起来。
+\end{paracol}
+\begin{newthem}[The Greater Than, Less Than, and Equal Symbols]
+The special symbols are used to show if a number is greater \bm{ $>$}, less \bm{$<$}, or $\bm{=}$.\\
+$\bm{>}$，$\bm{<}$和 $\bm{=}$ 用来表示大于、小于和等于关系。
+\begin{align}
+\text{large number} > \text{small number} && \text{大数}>\text{小数}\\
+\text{small number} < \text{large number} & &\text{小数}<\text{大数}
+\end{align}
+\end{newthem}
+
+\begin{paracol}{2}
+Very often we need to compare numbers to see which is the greatest or the least. The basic rules for comparing the numbers are as follows
+\switchcolumn[1]
+我们经常需要比较两个数的大小。比较两个数大小的方法如下
+\end{paracol}
+
+\begin{newalg}[Rules For Comparing Two Numbers 比较两个数大小的方法]
+\begin{enumerate}
+\item The greater the number of digits, the greater is the number.
+\item If two numbers have the same number of digits, the number with the bigger digit on the left hand side is greater.
+\item If the leftmost digits are the same we compare the next digit to the right and keep doing this until the digits are different.
+\end{enumerate}
+
+\begin{enumerate}
+\item 两个数位数多的数大
+\item 如果两个数的数字个数相同，最左边的数字大的数大
+\item 如果最左边的数字相同，就比较它右边的数字，如果还相同继续比较右边的数字，直到数字不同，数字大的数大。如果数字都相同则两个数一样大。
+\end{enumerate}
+\end{newalg}
+
+\begin{example}
+Compare these numbers 比较下面的数字
+$$
+\begin{matrix}
+a) 675,\ \  67\quad & b)  2,148,\ \ 3,147  & c)  2,178,345,\ \ 2,178,987 & d) 492,789,100, \ \ 492,789,100
+\end{matrix}
+$$
+\end{example}
+\begin{solution}
+
+{
+\centering
+\begin{tabular}{|c|p{10cm}|}
+\toprule	
+& \parbox[c]{10cm}{\centering Why? 原因}\\
+\midrule
+$675 > 67$ & The first number is 3-digit number, while second is 2-digit. 第一个数有三位，第二个数有两位\\ \hline
+${\color{red}2},148 < {\color{red}3},147$ & The first digit is smaller in the first number. 第一个数首位数小\\ \hline
+$2,178,{\color{red}3}45 < 2,178,{\color{red}9}87$& The first digit is the same, but the fifth digit is smller in the first number. 首位相同，但第一个数从左起第五个位数字小\\ \hline
+$492,789,100=492,789,100$ & All digits are the same. 所有的位置数字相同\\
+\bottomrule
+\end{tabular}
+}
+
+\end{solution}
+
+\begin{example}
+List the numbers in order from least to greatest. 把下列数字从小到大排序。
+$$
+1\quad 5\quad 35\quad 27\quad 14\quad 36\quad 63\quad 69\quad 78\quad 87\quad 99\quad 100 
+$$
+\end{example}
+\begin{solution}
+Based on the following rules: 根据以下的原则进行排序：
+\begin{enumerate}
+\item 1-digit numbers $<$ 2-digit numbers $<$ 3-digit numbers. 一位数小于两位数小于三位数。
+\item For 2-digit numbers, compare tens first. 两位数比较，先比较十位；十位数字相同的比较个位。
+\end{enumerate}
+The result is as follows 排列结果如下：
+$$
+1<5<14<27<35<36<63<69<78<87<99<100.
+$$
+\end{solution}
+
+\begin{example}
+The following are some animals and their ages. List them from young to old. 下面是一些动物的年龄，请将他们按年龄从小到大排列。
+
+\begin{tabular}{ll}
+Elephant: 80, 大象：80岁；& Giraffe: 25 长颈鹿：25岁\\
+Horse: 40, 马：40岁； & Monkey: 30, 猴子：30岁\\
+Tiger: 20, 老虎：20岁； & Carp: 100, 鲤鱼：100岁\\
+Turtle: 170, 乌龟：170岁； & Parrot: 104, 鹦鹉：104岁
+\end{tabular}
+\end{example}
+
+\begin{solution}
+List the numbers from least to greast: 把数字从小到大排序，我们得到：
+$$
+20<25<30<40<80<100<104<170.
+$$ 
+Therefore, the animals are listed as 所以动物按照以下顺序排序
+$$
+\text{tiger} < \text{Giraffe} < \text{Monkey} < \text{Horse} < \text{Elephant} < \text{Carp} < \text{Parrot} < \text{Turtle}.
+$$
+$$
+\text{老虎} < \text{长颈鹿} < \text{猴子} < \text{马} < \text{大象} < \text{鲤鱼} < \text{鹦鹉} < \text{乌龟}.
+$$
+\end{solution}
+
+\begin{note}
+From here, it is not required in the normal class. 以下为补充内容，非课本要求。
+\end{note}
+
+\begin{newprop}[transitivity 传递性]
+There are three numbers. If the first number is less than the second and the second is less than the third, then the first number is less than the third number.
+Similarly, if the first number is greater than the second and the second is greater than the third, then the first number is greater than the third number.
+
+如果有三个数。如果第一个数小于第二个，第二个数小于第三个数，则第一个数小于第三个数。同样的如果第一个数大于第二个，第二个数大于第三个数，则第一个数大于第三个数。
+\end{newprop}
+
+\begin{example}
+Put $1,2,3,4$ into the circles in the following graph to satisfy all of the relationships between each two circles. 把 $1, 2, 3, 4$ 填入下图中的小圆圈里是的图中所示的不等关系成立。
+\begin{center}
+\begin{tikzpicture}[thick]
+  \node[draw,circle,minimum size = 0.8cm] at (0,0)(a){};
+  \node[draw,circle,minimum size = 0.8cm] at (50,50)(b) {};
+  \node[draw,circle,minimum size = 0.8cm] at (50,-50) (c) {};
+  \node[draw,circle,minimum size = 0.8cm] at (100,0)(d) {};
+  
+  \node[inner sep=0,minimum size=0] at (40,0)(k0) {$>$}; % invisible node
+  \node[inner sep=0,minimum size = 0,rotate=45] at (25,25)(k1) {$>$};
+  \node[inner sep=0,minimum size = 0,rotate=-45] at (25,-25)(k2) {$>$};
+  \node[inner sep=0,minimum size = 0,rotate=90] at (50,-15)(k3) {$>$};
+  \node[inner sep=0,minimum size = 0,rotate=-45] at (75,25)(k4) {$<$};
+  \node[inner sep=0,minimum size = 0,rotate=45] at (75,-25)(k5) {$>$};
+  % draw arrows
+  \draw[] (a) to (k1);
+  \draw[] (k1) to (b);
+  \draw[] (a) to (k2);
+  \draw[] (k2) to (c);
+  \draw[] (a) to (k0);
+  \draw[] (k0) to (d);
+  \draw[] (b) to (k3);
+  \draw[] (k3) to (c);
+  \draw[] (b) to (k4);
+  \draw[] (k4) to (d);
+  \draw[] (c) to (k5);
+  \draw[] (k5) to (d);
+\end{tikzpicture}
+\end{center}
+\end{example}
+\begin{solution}
+\begin{paracol}{2}
+\begin{itemize}
+\item Since the number in the left circle is greater than the other three, it is $4$.
+\item Since the number in the upper circle is less than the other three, it should be $1$.
+\item The number in the lower circle is greater than the number in the right circle. Therefore, the lower one is $3$ and the right one is $2$.
+\end{itemize}
+\switchcolumn[1]
+\begin{itemize}
+\item 最左端的小圆圈中应填的数都大于其他三个小圆圈中应填的数，所以应填最大的数$4$；
+\item 最上面的小圆圈应填的数最小，所以应填$1$；
+\item 最下面的小圆圈应填的数大于右边的小圆圈应填的数，所以最下面圆圈应填$3$，最右边应填$2$。
+\end{itemize}
+\end{paracol}
+\begin{center}
+\begin{tikzpicture}[thick]
+  \node[draw,circle,minimum size = 0.8cm] at (0,0)(a){4};
+  \node[draw,circle,minimum size = 0.8cm] at (50,50)(b) {1};
+  \node[draw,circle,minimum size = 0.8cm] at (50,-50) (c) {3};
+  \node[draw,circle,minimum size = 0.8cm] at (100,0)(d) {2};
+  
+  \node[inner sep=0,minimum size=0] at (40,0)(k0) {$>$}; % invisible node
+  \node[inner sep=0,minimum size = 0,rotate=45] at (25,25)(k1) {$>$};
+  \node[inner sep=0,minimum size = 0,rotate=-45] at (25,-25)(k2) {$>$};
+  \node[inner sep=0,minimum size = 0,rotate=90] at (50,-15)(k3) {$>$};
+  \node[inner sep=0,minimum size = 0,rotate=-45] at (75,25)(k4) {$<$};
+  \node[inner sep=0,minimum size = 0,rotate=45] at (75,-25)(k5) {$>$};
+  % draw arrows
+  \draw[] (a) to (k1);
+  \draw[] (k1) to (b);
+  \draw[] (a) to (k2);
+  \draw[] (k2) to (c);
+  \draw[] (a) to (k0);
+  \draw[] (k0) to (d);
+  \draw[] (b) to (k3);
+  \draw[] (k3) to (c);
+  \draw[] (b) to (k4);
+  \draw[] (k4) to (d);
+  \draw[] (c) to (k5);
+  \draw[] (k5) to (d);
+\end{tikzpicture}
+\end{center}
+\end{solution}
+
+\begin{example}
+\begin{paracol}{2}
+There are 6 friends working on one projects. Here are some information about their ages.
+\begin{enumerate}
+\item Peter and Andrew are the same age.
+\item James is older than John, but younger than Peter.
+\item Philip is younger than Peter and James, but older than John.
+\item Andrew is younger than Thomas.
+\end{enumerate}
+Please list them by age and find out who is the oldest and who is the youngest.
+\switchcolumn[1]
+六个小伙伴一起在做一个任务。下面是关于他们年龄的一些线索：
+\begin{enumerate}
+\item 彼得和安德烈同岁；
+\item 雅各比约翰年龄大，但比彼得小；
+\item 腓力比彼得和雅各小，但比约翰大；
+\item 安德烈比多马年纪小。
+\end{enumerate}
+请按照年龄给他们排序。并回答谁年龄最大？谁年龄最小？
+\end{paracol}
+\end{example}
+\begin{solution}
+\begin{paracol}{2}
+Based on the information, we have
+\begin{enumerate}
+\item Based on 1, Peter $=$ Andrew.
+\item Based on 2, Peter $>$James $>$ John. \\
+Therefore, Peter  $=$ Andrew $>$James $>$ John
+\item Based on 3, Peter $>$ James $>$ Philip $>$ John. Therefore, 
+Peter $=$ Andrew  $>$ James $>$ Philip $>$ John.
+\item Based on 4, Thomas $>$Andrew.
+\end{enumerate}
+We have listed them by ages as follows
+\switchcolumn[1]
+根据他们年龄的线索，我们可以判断：
+\begin{enumerate}
+\item 由1，彼得$=$安德烈；
+\item 由2，彼得$>$雅各$>$约翰。\\所以，彼得$=$安德烈$>$雅各$>$约翰；
+\item 由3，彼得$>$雅各$>$腓力$>$约翰。所以，彼得$=$安德烈$>$雅各$>$腓力$>$约翰；
+\item 由4，多马$>$安德烈。
+\end{enumerate}
+我们按照年龄给他们排序如下：
+\end{paracol}
+\begin{center}
+Thomas $>$ Peter $=$ Andrew  $>$ James $>$ Philip $>$ John\\
+多马$>$彼得$=$安德烈$>$雅各$>$腓力$>$约翰
+\end{center}
+\begin{paracol}{2}
+Therefore, Thomas is the oldest and John is the youngest.
+\switchcolumn[1]
+所以多马年龄最大，约翰年龄最小。
+\end{paracol}
+\end{solution}
+
+\begin{exercise}
+\begin{paracol}{2}
+\begin{enumerate}
+\item 1
+\item 2
+\item 3
+\item 4
+\end{enumerate}
+\switchcolumn[1]
+\begin{enumerate}
+\item 1
+\item 2
+\item 3
+\item 4
+\end{enumerate}
+\end{paracol}
+\end{exercise}
+   \newpage

@@ -1,0 +1,157 @@
+\subsection{Arithmetic with decimals 小数的四则运算}
+
+\paragraph{Addition 加法} \ \ \\
+
+\begin{paracol}{2}
+We assume that you are familiar with the decimal number system and arithmetical operations on integers (whole numbers). Two decimal numbers may be added as follows:
+\begin{enumerate}
+\item The numbers are written one below the other with the decimal points vertically aligned
+\item The numbers are added as if they are whole numbers
+\item A decimal point is placed in the sum such that it is directly below the decimal points in the numbers being added
+\end{enumerate}
+\switchcolumn[1]
+小数的加法和整数的加法类似，小数加法的竖式有以下的要点：\\ \\ 
+\begin{enumerate}
+\item 列竖式时小数点要对齐；\\ \\ 
+\item 和整数的加法一样，从最低位加起，满十向前一位进一；
+\item 添加和的小数点，和的小数点和加项对齐。
+\end{enumerate}
+\end{paracol}
+
+\begin{example}
+123.45+37.50
+\end{example}
+\begin{solution}
+
+$$
+\begin{array}{lcccccc}
+&&1&&&&\\
+&1&2&3&.&4&5\\
++&&3&7&.&5&\\
+\hline
+&1&6&0&.&9&5
+\end{array}
+$$
+$123.45+37.50 = 160.95$.
+\end{solution}
+
+\paragraph{Subtraction 减法} \ \ \\
+
+\begin{paracol}{2}
+Subtracting one decimal from the other is similar to addition. Two positive decimal numbers may be subtracted as follows:
+\begin{enumerate}
+\item The numbers are written one below the other with the decimal points vertically aligned
+\item Mentally place a zero in any places where only one of the numbers has a digit.
+\item The numbers are subtracted as if they are whole numbers
+\item A decimal point is placed in the sum such that it is directly below the decimal points in the numbers being subtracted
+\end{enumerate}
+\switchcolumn[1]
+小数的减法和整数的减法类似，小数减法的竖式有以下的要点：\\ 
+\begin{enumerate}
+\item 列竖式时小数点要对齐；\\ \\ 
+\item 如果竖式中只有一个数假设另一个数位零；
+\item 和整数的减法一样，从最低位减起，不够减借一还十；
+\item 添加结果的小数点，小数点和减项对齐。
+\end{enumerate}
+\end{paracol}
+
+\begin{example}
+123.4-37.45
+\end{example}
+\begin{solution}
+$$
+\begin{array}{lcccccc}
+&0&11&12&.&13&\\
+&0&\bcancel{1}&\bcancel{2}&.&\bcancel{3}&10\\
+&\bcancel{1}&\bcancel{2}&\bcancel{3}&.&\bcancel{4}&{\color{green} \bcancel{0}}\\
+-&&3&7&.&4&5\\
+\hline
+&&8&5&.&9&5
+\end{array}
+$$
+$123.4-37.45 = 85.95$.
+\end{solution}
+
+\paragraph{Multiplication 乘法} \ \ \\
+
+\begin{paracol}{2}
+Two decimal numbers may be multiplied as follows:
+\begin{enumerate}
+\item The numbers are are written one below the other with the rightmost digit aligned.
+\item Starting on the right, multiply each digit in the top number by each digit in the bottom number, just as with whole numbers (ignore the decimal points).
+\item Add the products.
+\item Place the decimal point in the answer by starting at the right and moving a number of places equal to the sum of the decimal places in both numbers multiplied.
+\end{enumerate}
+\switchcolumn[1]
+小数乘法的竖式有以下的要点：\\  
+\begin{enumerate}
+\item 列竖式时数字靠右对齐；\\ 
+\item 忽略小数点，从乘数的最低位起，乘以被乘数；\\ \\ 
+\item 把所有乘得的结果相加；
+\item 看因数中一共有几位小数，就从积的右边数几位点上小数点。
+\end{enumerate}
+\end{paracol}
+
+\begin{example}
+$23.45\times 2.3$
+\end{example}
+\begin{solution}
+$$
+\begin{array}{lcccc}
+&2&3.&4&5\\
+\times&&&2.&3\\
+\hline
+&7&0&3&5\\
+4&6&9&0&\\ \hline
+5&3.&9&3&5
+\end{array}
+$$
+$23.45\times 2.3= 53.935$.
+\end{solution}
+
+\paragraph{Division 除法} \ \ \\
+
+\begin{paracol}{2}
+The way to do the division by a decimal number is as follows:
+\begin{enumerate}
+\item Convert the divisor to a whole number first if it is not by multiplying both numbers by 10, 100, etc. .
+\item Ignore the decimal point of the dividend; use Long Division as with whole numbers. If there is remainder, add 0 and continue to do the division until certain accurarcy.
+\item Put the decimal point upon the answer above in the same spot as the dividend (number being divided).
+\end{enumerate}
+\switchcolumn[1]
+小数除法的竖式的方法如下：\\  
+\begin{enumerate}
+\item 列竖式时小数点要对齐；\\ \\ 
+\item 忽略被除数的小数点，按照整数的除法计算。如果除到被除数的末尾有余数，就在余数后面添0再继续除；\\ 
+\item 商的小数点和被除数的小数点对齐。
+\end{enumerate}
+\end{paracol}
+
+\begin{example}
+Perform the following division without using a calculator, rounding to 2 decimal places:
+$$1.27\div 0.7$$
+\end{example}
+%\multicolumn{3}{c}{\fcolorbox{black}{black}{\color{white}\ \ \ Step 1\ \ \ }}\\
+\begin{solution}
+$$1.27\div 0.7 = 12.7 \div 7$$
+$$
+\arraycolsep=0pt
+\begin{array}{rccccc}
+&&\quad 1.\quad&\quad8\quad&\quad 1\quad&\quad4\\
+\cline{2-6}
+7&{\Big)}\ \ 1\quad&\quad2.\quad&\quad7\quad&&\\
+&&\quad7\quad&\quad\downarrow\quad&&\\
+\hline
+&&\quad5\quad&\quad7\quad&&\\
+&&\quad 5\quad&\quad 6\quad&&\\ \hline
+&&&\quad 1\quad&\quad 0\quad&\\
+&&&&\quad 7\quad&\\ \hline
+&&&&\quad 3 \quad&\quad 0\\
+&&&&\quad 2 \quad&\quad 8\\ \hline
+&&&&&\quad 2
+\end{array}
+$$
+$12.7\div 0.7 \approx  1.81$.
+\end{solution}
+
+   \newpage

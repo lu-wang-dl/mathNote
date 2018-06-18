@@ -1,0 +1,231 @@
+\subsection{factoring 因数分解}
+\begin{paracol}{2}
+Factors are the numbers you multiply together to get another number. There can be many factors of a number.
+\switchcolumn
+两个正整数相乘，那么这两个数都叫做积的因数，或称为约数。一个数可以有许多的因数。
+\end{paracol}
+
+\begin{example}
+Find all factors of $12$ 找到$12$的所有因数\\
+\end{example}
+\begin{solution}
+\begin{paracol}{2}
+Since 
+\switchcolumn 
+因为
+\end{paracol}
+$$
+1\times 12 = 12, \quad 2\times 6 = 12,\quad 3\times 4 = 12
+$$
+\begin{paracol}{2}
+$1, 2, 3, 4, 6$ and $12$ are factors of $12$.
+\switchcolumn 
+ $1, 2, 3, 4, 6, 12$ 是$12$的因数。
+\end{paracol}
+\end{solution}
+
+\begin{newdef}[Prime and composite number 质数（素数）和合数]
+A {\bf Prime number} is a whole number greater than 1 that cannot be made by multiplying two smaller whole numbers. A whole number greater than 1 that is not prime is called a {\bf composite number}.\\
+质数（素数）为在大于1的自然数中，除了1和此整数自身外两个因数，无法被其他自然数整除的数。合数是除了1和它本身还有其它正因数。
+\end{newdef}
+
+\begin{note}
+$1$ is neither prime number nor composite number. $1$既不是质数也不是合数。
+\end{note}
+
+\begin{paracol}{2}
+Here is some examples of prime numbers.
+\switchcolumn
+下面是一些小的质数：
+\end{paracol}
+$$
+2,\quad 3\quad 5,\quad 7,\quad 9,\quad 11,\quad 13,\quad 17,\quad 19,\quad 23,\quad 29,\quad 31,\quad 37,\quad 41,\cdots
+$$
+
+
+
+\begin{paracol}{2}
+Integer factorization is the decomposition of a composite number into a product of smaller integers. If these integers are further restricted to prime numbers, the process is called prime factorization.
+\switchcolumn
+整数分解是将一个正整数写成几个因数的乘积。如果所有的因数是质数则称为质因数分解。
+\end{paracol}
+
+\begin{example}
+What are the prime factors of $30$? 把30分解质因数。
+\end{example}
+\begin{solution}
+\begin{paracol}{2}
+It is best to start working from the smallest prime number, which is $2$, so 
+\switchcolumn 
+要找到所有的的质因数，最好从最小的质数开始试。
+\end{paracol}
+$$
+30\div 2 = 15.
+$$
+\begin{paracol}{2}
+$15$ is a composite number, but it cannot be divided by $2$. Therefore, let us try $3$.
+\switchcolumn 
+$15$是合数，但它不能被$2$整除，所以我们试着除以$3$。
+\end{paracol}
+$$
+15\div 3 = 5.
+$$
+\begin{paracol}{2}
+So we have the answer:
+\switchcolumn 
+所以题目的答案是：
+\end{paracol}
+$$
+30 = 2\times 3\times 5. 
+$$
+\end{solution}
+
+\begin{example}
+The sum of two prime numbers is $40$. In all of the possible choices of these two numbers, what is the maximum  product? 两个质数的和是40，求这两个质数的乘积的最大值是多少？
+\end{example}
+\begin{solution}
+\begin{paracol}{2}
+All possible prime number pairs are as follows
+\switchcolumn 
+把40表示为两个质数的和，共有三种形式
+\end{paracol}
+$$
+40 = 17 + 23 = 11+29 = 3+37.
+$$
+\begin{paracol}{2}
+Since
+\switchcolumn 
+因为
+\end{paracol}
+$$
+17\times 23 = 391 > 11\times 29 = 319> 3\times 37 = 111.
+$$
+\begin{paracol}{2}
+The maximum product is $391$.
+\switchcolumn 
+这两个质数的最大乘积是391。
+\end{paracol}
+\end{solution}
+
+\paragraph{Greatest common divisor and least common multiple 最大公约数和最小公倍数}
+\ \ 
+
+\begin{newdef}[Greatest common divisor 最大公约数]
+The greatest common divisor (gcd) of two or more integers, which are not all zero, is the largest positive integer that divides each of the integers. \\
+几个数公有的约数，叫做这几个数的公约数；其中最大的一个，叫做这几个数的最大公约数。
+\end{newdef}
+
+\begin{newdef}[Least common multiple 最小公倍数]
+The least common multiple (lcm) of two or more integers is the smallest positive integer that is divisible by each of the integers.  \\
+几个数公有的倍数，叫做这几个数的公倍数；其中最小的一个，叫做这几个数的最小公倍数。
+\end{newdef}
+
+\begin{newdef}[Coprimes 互质数]
+Coprimes is a pair of numbers not having any common factors other than 1.  \\
+如果两个数的最大公约数是1，那么这两个数叫做互质数。
+\end{newdef}
+
+\begin{paracol}{2}
+There are several ways to find the gcd. \\ 
+\begin{itemize}
+\item Method of exhaustion
+\item Prime factorization
+\item Euclid's algorithm
+\end{itemize}
+\switchcolumn 
+计算两个数的最大公因数有许多不同的方法：
+\begin{itemize}
+\item 穷举法
+\item 因数分解
+\item 辗转相除法
+\end{itemize}
+\end{paracol}
+
+
+\begin{paracol}{2}
+{\bf Method of exhaustion:} List all of the factors for each of the integers and choose the largest one as gcd. In practice, this method is only feasible for small numbers.
+\switchcolumn 
+{\bf 穷举法：}分别列出两整数的所有约数，并找出最大的公约数。这种方法只针对较小的数。
+\end{paracol}
+
+\begin{example}
+用一个数去除60、75，都能整除，这个数最大是多少？
+\end{example}
+\begin{solution}[Method of exhaustion 穷举法]
+\begin{paracol}{2}
+The factors of these three numbers are
+\switchcolumn 
+这两个数的因子分别为：
+\end{paracol}
+\begin{align*}
+60:\ & 1,2,3,4,5,6,10,12,{\color{red} 15},20,30,60\\
+75:\ & 1, 3, 5, {\color{red} 15}, 25, 75 
+\end{align*}
+\begin{paracol}{2}
+Therefore, the largest number is 15.
+\switchcolumn 
+这个数最大是15。
+\end{paracol}
+\end{solution}
+
+\begin{paracol}{2}
+{\bf Prime factorization:} Compute the prime factorization of each of the integers and find the "overlap" of the expressions. gcd is the product of the common factors. In practice, this method is only feasible for small numbers; computing prime factorizations in general takes far too long.
+\switchcolumn 
+{\bf 因数分解：}分别列出两数的素因数分解式，并计算共同项的乘积。这种方法只针对较小的数，对于大数的因式分解通常比较困难。
+\end{paracol}
+
+\begin{solution}[Prime factorization 因数分解]
+
+\begin{paracol}{2}
+The prime factorizationof these three numbers are
+\switchcolumn 
+这三个数的因式分解分别为：
+\end{paracol}
+\ \\
+\begin{align*}
+60=& 2\times 2\times 3\times 5\\
+75:=&3\times 5\times 5
+\end{align*}
+
+\begin{paracol}{2}
+The common factors are $3$ and $5$. Therefore, the largest number is $3\times 5 =15$.
+\switchcolumn 
+共同的因子是：3，5。这个数最大是$3\times 5 =15$。
+\end{paracol}
+\end{solution}
+
+\begin{paracol}{2}
+{\bf Euclid's algorithm:} Divide the large number by the small number to get the remainder. And divide the divisor by the remainder to get the new remainder. Repeat this prodecure until the remainder is zero. Then gcd is the last divisor.  Euclid's algorithm is very efficient for large numbers. The total number of steps needed is less or equal than the number of digits of the smaller number. 
+\switchcolumn 
+{\bf 辗转相除法：}两数相除，取余数重复进行相除，直到余数为$0$时，前一个除数即为最大公约数。辗转相除法处理大数时非常高效，它需要的步骤不会超过较小数的位数（十进制下）的五倍。
+\end{paracol}
+
+\begin{newalg}[Euclid's algorithm 辗转相除法]
+\begin{enumerate}
+\item Divide the large number by the small number to get the remainder;
+\item Divide the divisor by the remainder to get the new remainder;
+\item Repeat step 2, until the remainder is 0;
+\item The gcd is the divisor of the last step.
+\end{enumerate}
+
+\begin{enumerate}
+\item 大数除以小数取余数；
+\item 上一步的除数除以上一步的余数取余数；
+\item 重复上一步知道余数为零；
+\item 前一个除数即为最大公约数。
+\end{enumerate}
+\end{newalg}
+
+\begin{solution}[Euclid's algorithm 辗转相除法]
+\begin{align*}
+75\div 60 = & 1 \ldots 15 \\ 
+60\div {\color{red} 15} = & 4
+\end{align*}
+
+\begin{paracol}{2}
+ Therefore, the largest number is $15$.
+\switchcolumn 
+这个数最大是$15$。
+\end{paracol}
+\end{solution}
+\newpage

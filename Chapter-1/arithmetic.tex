@@ -1,0 +1,223 @@
+\subsection{Order of operations 运算顺序}
+\begin{paracol}{2}
+It is important to know the order of operations when you have different arithmetic in one equation. 
+\switchcolumn[1]
+对于四则混合运算，掌握运算顺序是十分重要的。
+\end{paracol}
+
+\begin{table}[htp]
+\centering
+\definecolor{LightRed}{rgb}{1,0.88,0.88}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+\definecolor{LightGreen}{rgb}{0.88,1,0.88}
+\definecolor{LightPink}{rgb}{1,0.88,1}
+\begin{tabular}{>{\columncolor{LightCyan}}c>{\columncolor{LightRed}}c>{\columncolor{LightGreen}}c>{\columncolor{LightGreen}}c>{\columncolor{LightPink}}c>{\columncolor{LightPink}}c}
+{\color{blue}\bf P} & {\color{red}\bf E} & {\color{green!40!black}\bf M}& {\color{teal} \bf D} & {\color{purple} \bf A} &{\color{magenta} \bf S}\\
+{\color{blue}\bf P}arenthesis & {\color{red}\bf E}xponents & {\color{green!40!black}\bf M}ultiplication & {\color{teal} \bf D}ivision & {\color{purple} \bf A}ddition & {\color{magenta} \bf S}ubtraction \\
+{\color{blue}括号} & {\color{red} 指数} & {\color{green!40!black} 乘法} & {\color{teal} 除法} & {\color{purple} 加法} & {\color{magenta} 减法}\\
+$\xrightarrow[\text{自左至右计算}]{\textsl{From left to right}}$ & $\xrightarrow[\text{自左至右计算}]{\textsl{From left to right}}$  & \multicolumn{2}{>{\columncolor{LightGreen}}c}{$\xrightarrow[\text{自左至右计算}]{\textsl{From left to right}}$}  & \multicolumn{2}{>{\columncolor{LightPink}}c}{$\xrightarrow[\text{自左至右计算}]{\textsl{From left to right}}$}\\
+{\color{blue}$ (),[],\{\}$} & {\color{red} $ \ ^2, \sqrt{\ \ }$} & {\color{green!40!black} $\times, *, \cdot$} & {\color{teal} $\div, /$} & {\color{purple} $+$} & {\color{magenta} $-$}
+\end{tabular}
+\end{table}
+
+\begin{example}
+$150 - 50\times 2 +18$
+\end{example}
+\begin{solution}
+\begin{align*}
+&150 - {\color{red} 50\times 2} +18& \text{Compute multiplication first 先计算乘法}\\
+=&{\color{red} 150 - 100} + 18 & \text{Compute addition and subtraction }\\
+=& {\color{red} 50 + 18} & \text{from left to right 从左至右计算加减}\\
+=& 68
+\end{align*}
+\end{solution}
+
+\begin{example}
+$800-600\div (25\times 4)$
+\end{example}
+\begin{solution}
+\begin{align*}
+&800-600\div {\color{red}(25\times 4)}&   \text{{\color{blue}\bf P}arenthesis\  {\color{blue}括号} }\\
+=&800 - {\color{red}600\div 100} &  \text{{\color{green!40!black}\bf M}ultiplication\& {\color{teal} \bf D}ivision\  {\color{green!40!black} 乘法}  {\color{teal} 除法}}\\
+=& {\color{red}800 - 6}& \text{{\color{purple} \bf A}ddition \& {\color{magenta} \bf S}ubtraction\ {\color{purple} 加法}{\color{magenta} 减法}}\\
+=& 796
+\end{align*}
+
+\end{solution}
+\newpage
+
+\subsection{Properties 四则运算的运算律}
+
+\begin{paracol}{2}
+The summary of the properties of the arithmetics are as follows.
+\switchcolumn[1]
+四则运算的规律如下：
+\end{paracol}
+
+\begin{newprop}[Commutative property of addition 加法交换律]
+If the order of the addends changes, the sum will stay the same.\\
+加法各项交换顺序，其和不变。
+$$
+8+7 = 15, \quad 7+8=15.
+$$
+\end{newprop}
+
+\begin{example}
+Find the missing number 空格中填入缺少的数。
+$$
+\begin{matrix}
+5+6 = \underline{\quad} + 5 & 50+4 = \underline{\quad} + 50\\
+125+70 = \underline{\quad} + 125 & 17655+6 = \underline{\quad} + 17655
+\end{matrix}
+$$
+\end{example}
+\begin{solution}
+$$
+\begin{matrix}
+5+6 = \underline{\color{red} 6} + 5 & 50+4 = \underline{\color{red} 4} + 50\\
+125+70 = \underline{\color{red} 70} + 125 & 17655+6 = \underline{\color{red} 6} + 17655
+\end{matrix}
+$$
+\end{solution}
+
+\begin{newprop}[Associative property of addition 加法结合律]
+If the grouping of the addends changes, the sum will stay the same. \\
+三个数相加，先把前两个数相加，或者先把后两个数相加，和不变。
+$$
+(7+8)+9 = 24, \quad 7+(8+9) = 24.
+$$
+\end{newprop}
+
+\begin{example}
+Find the missing number 空格中填入缺少的数。
+$$
+\begin{matrix}
+(2+3)+4= \underline{\quad} + (3+4) & (50+4)+7 = 50+(\underline{\quad}+7)\\
+12+(2+5) = (12+\underline{\quad}) + 5 & 1+(6+2) = (1+6)+\underline{\quad}
+\end{matrix}
+$$
+\end{example}
+\begin{solution}
+$$
+\begin{matrix}
+(2+3)+4= \underline{\color{red} 2} + (3+4) & (50+4)+7 = 50+(\underline{\color{red} 4}+7)\\
+12+(2+5) = (12+\underline{\color{red} 2}) + 5 & 1+(6+2) = (1+6)+\underline{\color{red} 2}
+\end{matrix}
+$$
+\end{solution}
+
+\begin{newprop}[Commutative property of multiplication 乘法交换律]
+If the order of the factors changes, the product will stay the same.\\
+交换乘数和被乘数的位置，乘积不变。
+$$
+3\times 5 = 15, \quad 5\times 3 = 15.
+$$
+\end{newprop}
+\newpage
+\begin{example}
+Find the missing number 空格中填入缺少的数。
+$$
+\begin{matrix}
+5\times6 = \underline{\quad} \times 5 & 50\times  \underline{\quad} = 7\times\underline{\quad} \\
+125\times70 = 70\times \underline{\quad} & \underline{\quad} \times 6 = \underline{\quad} \times 17
+\end{matrix}
+$$
+\end{example}
+\begin{solution}
+$$
+\begin{matrix}
+5\times6 = \underline{\color{red} 6} \times 5 & 50\times  \underline{\color{red} 7} = 7\times\underline{\color{red} 50} \\
+125\times70 = 70\times \underline{\color{red} 125} & \underline{\color{red} 17} \times 6 = \underline{\color{red} 6} \times 17
+\end{matrix}
+$$
+\end{solution}
+
+\begin{newprop}[Associative property of multiplication 乘法结合律]
+If the grouping of the factors changes, the sum will stay the same. \\
+三个数相乘，先把前两个数相乘，或者先把后两个数相乘，积不变。
+$$
+(3\times4)\times 5 = 60, \quad 3\times(4\times5) = 60.
+$$
+\end{newprop}
+
+\begin{example}
+Find the missing number 空格中填入缺少的数。
+$$
+\begin{matrix}
+(2\times3)\times 4= \underline{\quad} \times (3\times 4) & (50\times 4)\times \underline{\quad} = 50\times(\underline{\quad}\times 7)\\
+12\times(7\times 5) = (\underline{\quad}\times \underline{\quad}) \times 5 & 10\times (6\times 2) = (\underline{\quad}\times 6)\times \underline{\quad}
+\end{matrix}
+$$
+\end{example}
+\begin{solution}
+$$
+\begin{matrix}
+(2\times3)\times 4= \underline{\color{red}  2} \times (3\times 4) & (50\times 4)\times \underline{\color{red}  7} = 50\times(\underline{\color{red} 4}\times 7)\\
+12\times(7\times 5) = (\underline{\color{red}  12}\times \underline{\color{red} 7}) \times 5 & 10\times (6\times 2) = (\underline{\color{red} 10}\times 6)\times \underline{\color{red}  2}
+\end{matrix}
+$$
+\end{solution}
+
+\begin{newprop}[Distributive law 乘法分配律]
+Multiplying a number by a group of numbers added together is the same as doing each multiplication separately.\\
+两个数的和与一个数相乘，可以先把它们分别与这个数相乘，再将积相加。
+$$
+3\times(4+5) = 3\times 4 + 3\times 5 = 27.
+$$
+\end{newprop}
+
+\begin{example}
+$8\times (10+2)$
+\end{example}
+\begin{solution}
+\begin{align*}
+&8\times (10+2)\\
+=&8\times 10 + 8\times 2\\
+=& 80 + 16\\
+=& 96
+\end{align*}
+\end{solution}
+
+\begin{newprop}[Identity property 恒等性质]
+When we add 0 to any number, the number does not change.\\
+任何一个数加零，等于这个数本身。
+$$
+5+0 = 5.
+$$
+When we multiply any number by 1, the number does not change.\\
+任何数乘以零，等于这个数本身。
+$$
+5\times 1 = 5.
+$$
+\end{newprop}
+
+\begin{paracol}{2}
+We are going to simplify the calculation by using these properties. But sometimes, it might be confusing. We need to do more practice to fully understand the concept. 
+\switchcolumn[1]
+灵活运用各种运算律是为了帮助我们更快的计算。然而，这也很容易产生一些混淆和疑惑。建议理解和熟练要交互运用，通过练习来掌握这些计算技巧。
+\switchcolumn[0]*
+It is important to notice that there is no commutative and associative properties for subtraction and division. When applying the associative property, we need to transfer subtraction and division to addition and multiplication.
+\switchcolumn[1]
+另外，需要注意减法和除法没有交换律和结合律。如果我们需要使用结合律，我们要记住变号（减号变加号，除号变乘号）
+\end{paracol}
+
+\begin{example}
+$1600\div 10\div 4\div 2$
+\end{example}
+\begin{solution}
+It is ok to solve it step by step. 我们可以从左到右依次计算。
+\begin{align*}
+&1600\div 10\div 4\div 2\\
+=&160\div 4\div 2\\
+=&40\div 2\\
+=& 20
+\end{align*}
+We can also combine the divisor. 我们也可以把除数一起整合后一起除。
+\begin{align*}
+&1600\div 10\div 4\div 2\\
+=&1600\div (10\times 4\times 2)\\
+=&1600\div 80\\
+=& 20
+\end{align*}
+\end{solution}
+   \newpage

@@ -1,0 +1,123 @@
+\subsection{Exponentiation 指数运算}
+\begin{paracol}{2}
+Exponentiation is a special operation for writing a product in which all of the numbers being multiplied are the same. For example, $2\times 2\times 2\times 2$ can be written as $2^4$. We call the entire expression $2^4$ a {\bf power}, specifically the power of $2$. The number on the bottom is the base. The number on top is the exponent. 
+\switchcolumn[1]
+指数运算是多个相同数字的乘积的另一种表达方式。例如：$2\times 2\times 2\times 2$ 可以写成 $2^4$。$2^4$ 被称为指数运算，或2的幂。指数运算中，在下面的数字被称为底数，在上面的数字被称为指数。
+\switchcolumn[0]*
+When the exponent is $2$, we call it a square which means the product of a number ans itself. For example, $4^2$ is called "four squared". When the exponent is $3$, we call it a cube. So $6^3$ is called "six cubed".
+\switchcolumn[1]
+当指数为$2$时，我们称为平方。一个数的平方是此数与它的本身相乘所得的乘积。例如：$4^2$称为4的平方。当指数为$3$时，我们称为立方。如$6^3$称为6的立方。
+\end{paracol}
+
+\begin{example}
+\begin{tabular}{cccc}
+a. $10^2$& b. $3^5$ & c. $5^6$ & d. $10^7$
+\end{tabular}
+\end{example}
+\begin{solution}
+\begin{align*}
+a.\quad & 10^2 = 10\times 10 = 100.\\
+b.\quad & 3^5 = 3\times 3\times 3\times 3\times 3 = 243.\\
+c.\quad & 5^6 = 5\times 5\times 5\times 5\times 5\times 5 = 125\times 125 = 15625.\\
+d.\quad & 10^7 = 10,000,000\\
+\end{align*}
+\end{solution}
+
+\begin{newprop}[Product of powers 幂相乘]
+{\bf Same exponent}: The product of two powers with the same exponent is the product of the two base with the same exponent. For example, \\
+同指数幂相乘，指数不变，底数相乘。例如：
+$$
+3^3\times 4^3 = (3\times 4)^3
+$$
+{\bf Same base:} The exponent of the product of two powers with the same base is the sum of the two powers. The base is the same.\\
+同底数幂相乘，底数不变，指数相加
+$$
+4^3\times 4^5 = 4^{3+5}
+$$
+\end{newprop}
+
+\begin{example}
+Explain why 
+$$
+ 3^3\times 4^3 = (3\times 4)^3, \quad 4^3\times 4^5 = 4^{3+5}
+$$
+\end{example}
+\begin{solution}
+\begin{align*}
+&3^3\times 4^3 \\
+=& (3\times 3\times 3) \times (4\times 4\times 4)\\
+=& (3\times 4) \times (3\times 4) \times (3\times 4)\\
+=& (3\times 4)^3
+\end{align*}
+\begin{align*}
+&4^3\times 4^5\\
+=& (4\times 4\times 4) \times (4\times 4\times 4\times 4\times 4)\\
+=& 4\times 4\times 4 \times 4\times 4\times 4\times 4\times 4\\
+=& 4^8\\
+=& 4^{3+5}
+\end{align*}
+\end{solution}
+
+\begin{newprop}[Quotient of powers 幂相除]
+{\bf Same exponent}: The quotient of two powers with the same exponent is the quotient of the two base with the same exponent. For example, \\
+同指数幂相除，指数不变，底数相除。例如：
+$$
+6^3\div 2^3 = (6\div 2)^3
+$$
+{\bf Same base:} The exponent of the quotient of two powers with the same base is the subtraction of the two powers. The base is the same.\\
+同底数幂相除，底数不变，指数相减。例如：
+$$
+4^5\div 4^3 = 4^{5-3}
+$$
+\end{newprop}
+
+\begin{example}
+Explain why 
+$$
+6^3\div 2^3 = (6\div 2)^3, \quad 4^5\div 4^3 = 4^{5-3}
+$$
+\end{example}
+\begin{solution}
+\begin{align*}
+&6^3\div 2^3  \\
+=& (6\times 6\times 6) \div (2\times 2\times 2)\\
+=& 6\times 6\times 6 \div 2\div 2\div 2\\
+=& (6\div 2) \times (6\div 2) \times (6\div 2)\\
+=& (6\div 2)^3
+\end{align*}
+\begin{align*}
+&4^5\div 4^3 \\
+=& (4\times 4\times 4\times 4\times 4)\div (4\times 4\times 4)\\
+=& 4\times 4\times 4 \times 4\times 4\div 4\div 4\div 4\\
+=& 4^2\\
+=& 4^{5-3}
+\end{align*}
+\end{solution}
+
+\begin{newprop}[Power of powers 幂的幂]
+When raising a power to a power in an exponential expression, you find the new power by multiplying the two powers together. For example, \\
+一个数的幂的幂等于这两个幂相乘。例如：
+$$
+(6^3)^3 = 6^{3\times 3}
+$$
+\end{newprop}
+
+\begin{example}
+Simplify. Rewrite the expression in the form $5^{*}$. 化简。把下面表达式写成 $5^{*}$的形式。
+$$
+(5^3)^2
+$$
+\end{example}
+\begin{solution}
+$$
+(5^3)^2 = 5^{3\times 2} = 5^6.
+$$
+
+\end{solution}\begin{newprop}[Zero-Exponent Rule 零次幂]
+Any number raised to the zero power is 1. For example, \\
+任何数的零次幂等于1。例如：
+$$
+181^0 = 1.
+$$
+\end{newprop}
+\newpage

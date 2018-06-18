@@ -1,0 +1,105 @@
+\section{Arithmetic in geometry 几何中的计算}
+
+\subsection{Primeter 周长}
+\begin{paracol}{2}
+The {\bf perimeter} of a closed figure is the total length of its boundary. The general way to find the perimeter of any shape is to add up the length of all its sides. For certain shapes, such as rectangles and circles, there are specific formulas you can use to simplify the process. 
+\switchcolumn[1]
+周长指一块封闭的图形边缘长度的总和。通常计算周长的方法是把图形每条边长加在一起求和，即为周长。对于一些特殊的形状，例如长方形，正方形，圆形，根据其特点可以有计算周长的公式。我们也可以利用这些公式来帮助我们计算一些图形的周长。
+\end{paracol}
+\begin{newprop}[The perimeter of rectangles 长方形的周长]
+The perimeter of rectangles can be calculated by 
+$$
+\textbf{Perimeter} = 2\times(\textbf{width}+\textbf{height})
+$$
+长方形周长可以用以下公式计算：
+$$
+\textbf{周长} = 2\times(\textbf{宽}+\textbf{高})
+$$
+\end{newprop}
+\begin{newprop}[The perimeter of squares 正方形的周长]
+The perimeter of squares can be calculated by 
+$$
+\textbf{Perimeter} = 4\times\textbf{side}
+$$
+正方形周长可以用以下公式计算：
+$$
+\textbf{周长} = 4\times\textbf{边长}
+$$
+\end{newprop}
+\begin{newprop}[The perimeter of circle 圆形的周长]
+The perimeter of circle can be calculated by 
+$$
+\textbf{Perimeter} = 2\times\pi\times\textbf{radius}
+$$
+圆形周长可以用以下公式计算：
+$$
+\textbf{周长} = 2\times\pi\times\textbf{半径}
+$$
+\end{newprop}
+\begin{example}
+Farmer Fred
+ wants to fence the region shown in bold in the graph. If each of the squares shown has sides taht are 10 feet long, and the fence costs \$ 7 per foot, then how much will Fred's fence cost?
+ \begin{center}
+ \begin{tikzpicture}[x=1cm,y=1cm]
+ \newcommand*{\xMin}{0}%
+\newcommand*{\xMax}{7}%
+\newcommand*{\yMin}{0}%
+\newcommand*{\yMax}{5}%
+    \foreach \i in {\xMin,...,\xMax} {
+        \draw [very thin,gray] (\i,\yMin) -- (\i,\yMax)  node [below] at (\i,\yMin) {$\i$};
+    }
+    \foreach \i in {\yMin,...,\yMax} {
+        \draw [very thin,gray] (\xMin,\i) -- (\xMax,\i) node [left] at (\xMin,\i) {$\i$};
+    }
+
+\draw [step=1.0,blue, very thick] (0,2)-- (0,4)--(5,4)--(5,5)--(7,5)--(7,1)--(6,1)--(6,0)--(2,0)--(2,1)--(1,1)--(1,2)--(0,2) ;
+\end{tikzpicture}
+\end{center}
+\end{example}
+\begin{solution}
+\begin{paracol}{2}
+We could figure out the perimeter by adding up all of the edges. But there is a more clever solution. 
+\switchcolumn[1]
+我们可以把多边形每段边加起来。但我们还有一种比较简便的方式来求周长：把求这个多边形的周长就转化为求一个正方形的周
+长，这个多边形的周长就可以巧妙地求出来了。
+\end{paracol}
+
+ \begin{center}
+ \begin{tikzpicture}[x=1cm,y=1cm]
+ \newcommand*{\xMin}{0}%
+\newcommand*{\xMax}{7}%
+\newcommand*{\yMin}{0}%
+\newcommand*{\yMax}{5}%
+    \foreach \i in {\xMin,...,\xMax} {
+        \draw [very thin,gray] (\i,\yMin) -- (\i,\yMax)  node [below] at (\i,\yMin) {$\i$};
+    }
+    \foreach \i in {\yMin,...,\yMax} {
+        \draw [very thin,gray] (\xMin,\i) -- (\xMax,\i) node [left] at (\xMin,\i) {$\i$};
+    }
+
+\draw [step=1.0,blue, very thick] (0,2)-- (0,4)--(5,4)--(5,5)--(7,5)--(7,1)--(6,1)--(6,0)--(2,0)--(2,1)--(1,1)--(1,2)--(0,2) ;
+\draw [step=1.0,red, very thick] (0,0) -- (0,5) -- (7,5) --(7,0) -- (0,0);
+\draw [step = 1.0, black,->,>=stealth] (2.5,4)--(2.5,5);
+\draw [step = 1.0, black,->,>=stealth] (5,4.5)--(0,4.5);
+\draw [step = 1.0, black,->,>=stealth] (0.5,2)--(0.5,0);
+\draw [step = 1.0, black,->,>=stealth] (1.5,1)--(1.5,0);
+\draw [step = 1.0, black,->,>=stealth] (1,1.5)--(0,1.5);
+\draw [step = 1.0, black,->,>=stealth] (2,0.5)--(0,0.5);
+\draw [step = 1.0, black,->,>=stealth] (6,0.5)--(7,0.5);
+\draw [step = 1.0, black,->,>=stealth] (6.5,1)--(6.5,0);
+\end{tikzpicture}
+\end{center}
+
+$$
+2\times(5+7) = 24.
+$$
+\begin{paracol}{2}
+Since each of the 24 side lengths is 10 feet. The permeter is $24\times 10 = 240(feet)$. The fence cost \$ 7, so Fred's fence costs $240\times 7 = \$1680$.
+\switchcolumn[1]
+因为每段的长度是 10 英尺，所以周长是$24\times 10 = 240(\text{英尺})$. 每英尺围栏价格为 \$ 7, 所以 Fred 建造围栏的总花费为： $240\times 7 = \$1680$。
+\end{paracol}
+\end{solution}
+
+\subsection{Area 面积}
+
+\newpage
